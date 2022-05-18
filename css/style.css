@@ -8,6 +8,13 @@ body {
   background-color: var(--withe-color);
   color: var(--black-color);
 }
+.logo span,
+.footlogo span {
+  color: var(--blue-color);
+}
+.logo {
+  color: var(--black-color);
+}
 .navi1 a {
   color: var(--black-color);
 }
@@ -50,6 +57,9 @@ body {
 }
 footer {
   background-color: #2f303a;
+}
+.footlogo {
+  color: var(--withe-color);
 }
 .foot-adress {
   color: var(--withe-color);

@@ -5,58 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
       <nav>
+        <p class="logo"><a href="/">WebStudio</a></p>
         <ul>
-          <li><a href="/">WebStudio</a></li>
-          <li><a href="/">Студия</a></li>
-          <li><a href="/">Портфолио</a></li>
-          <li><a href="/">Контакты</a></li>
+          <li class="navi1"><a href="/">Студия</a></li>
+          <li class="navi2"><a href="/">Портфолио</a></li>
+          <li class="navi3"><a href="/">Контакты</a></li>
         </ul>
         <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="/">+38 096 111 11 11</a></li>
+          <li class="navimail">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="naviphone"><a href="/">+38 096 111 11 11</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
+      <section class="titlelist">
         <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button type="button">Заказать услугу</button>
+        <button type="button" class="button">Заказать услугу</button>
       </section>
-      <section>
+      <section class="feature">
         <ul>
           <li>
             <h3>Внимание к деталям</h3>
-            <p>
+            <p class="paragr1">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
             <h3>Пунктуальность</h3>
-            <p>
+            <p class="paragr2">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
             <h3>Планирование</h3>
-            <p>
+            <p class="paragr3">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
             <h3>Современные технологии</h3>
-            <p>
+            <p class="paragr4">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
           </li>
         </ul>
+      </section>
+      <section class="work">
         <h2>Чем мы занимаемся</h2>
         <ul>
           <li><img src="images/box1.jpg" alt="pc" /></li>
@@ -64,28 +69,28 @@
           <li><img src="images/box3.jpg" alt="the table" /></li>
         </ul>
       </section>
-      <section>
+      <section class="commands">
         <h2>Наша команда</h2>
         <ul>
           <li>
             <img src="images/img.jpg" alt="igor" />
             <h3>Игорь Демьяненко</h3>
-            <p>Product Designer</p>
+            <p class="paragr-commands1">Product Designer</p>
           </li>
           <li>
             <img src="images/img(1).jpg" alt="igor" />
             <h3>Ольга Репина</h3>
-            <p>Frontend Developer</p>
+            <p class="paragr-commands2">Frontend Developer</p>
           </li>
           <li>
             <img src="images/img(2).jpg" alt="igor" />
             <h3>Николай Тарасов</h3>
-            <p>Marketing</p>
+            <p class="paragr-commands3">Marketing</p>
           </li>
           <li>
             <img src="images/img(3).jpg" alt="igor" />
             <h3>Михаил Ермаков</h3>
-            <p>UI Designer</p>
+            <p class="paragr-commands4">UI Designer</p>
           </li>
         </ul>
       </section>
@@ -93,9 +98,9 @@
     <footer>
       <address>
         <a href="/">WebStudio</a>
-        <p>г. Киев, пр-т Леси Украинки, 26</p>
-        <p>info@example.com</p>
-        <p>+38 099 111 11 11</p>
+        <p class="foot-adress">г. Киев, пр-т Леси Украинки, 26</p>
+        <p class="foot-mail">info@example.com</p>
+        <p class="foot-number">+38 099 111 11 11</p>
       </address>
     </footer>
   </body>

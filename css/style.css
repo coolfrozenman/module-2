@@ -1,0 +1,60 @@
+:root {
+  --black-color: #212121;
+  --gray-color: #757575;
+  --withe-color: #fff;
+  --blue-color: #2196f3;
+}
+body {
+  background-color: var(--withe-color);
+  color: var(--black-color);
+}
+.navi1 a {
+  color: var(--black-color);
+}
+.navi1 a:hover,
+.navimail a:hover,
+.navi1 a:focus,
+.navimail a:focus {
+  color: var(--blue-color);
+}
+.navi2 a,
+.navi3 a {
+  color: var(--black-color);
+}
+.navimail a,
+.naviphone a {
+  color: var(--gray-color);
+}
+.titlelist {
+  background-color: #2f303a;
+  color: var(--withe-color);
+}
+.titlelist .button {
+  background-color: var(--blue-color);
+  color: var(--withe-color);
+}
+.paragr1,
+.paragr2,
+.paragr3,
+.paragr4 {
+  color: var(--gray-color);
+}
+.commands {
+  background-color: #f5f4fa;
+}
+.paragr-commands1,
+.paragr-commands2,
+.paragr-commands3,
+.paragr-commands4 {
+  color: var(--gray-color);
+}
+footer {
+  background-color: #2f303a;
+}
+.foot-adress {
+  color: var(--withe-color);
+}
+.foot-mail,
+.foot-number {
+  color: rgba(255, 255, 255, 0.6);
+}

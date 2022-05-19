@@ -3,35 +3,60 @@
   --gray-color: #757575;
   --withe-color: #fff;
   --blue-color: #2196f3;
+  --primary-font-stack: "Roboto", sans-serif;
 }
 body {
   background-color: var(--withe-color);
   color: var(--black-color);
+  font-family: var(--primary-font-stack);
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 0.5px;
 }
-.logo span,
+
+a,
+.button {
+  cursor: pointer;
+  text-decoration: none;
+}
+/*Панэль навигации*/
+.logo .logo-span1,
 .footlogo span {
   color: var(--blue-color);
 }
-.logo {
+.logo .logo-span2 {
   color: var(--black-color);
 }
-.navi1 a {
+.logo-span1,
+.logo-span2,
+.foot-span1,
+.foot-span2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.5px;
+}
+.link {
   color: var(--black-color);
 }
-.navi1 a:hover,
-.navimail a:hover,
-.navi1 a:focus,
-.navimail a:focus {
+.link:hover,
+.link:focus,
+.contacts__link:focus,
+.contacts__link:hover {
   color: var(--blue-color);
 }
-.navi2 a,
-.navi3 a {
-  color: var(--black-color);
-}
-.navimail a,
-.naviphone a {
+.contacts__link {
   color: var(--gray-color);
 }
+.header-nav {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.3px;
+}
+
+/*баннер заказать*/
 .titlelist {
   background-color: #2f303a;
   color: var(--withe-color);
@@ -40,26 +65,73 @@ body {
   background-color: var(--blue-color);
   color: var(--withe-color);
 }
-.paragr1,
-.paragr2,
-.paragr3,
-.paragr4 {
+.button {
+  font-family: var(--primary-font-stack);
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 1px;
+}
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.button,
+h2,
+.card__title {
+  font-weight: 700;
+}
+/*Особенности */
+.card__text,
+.team-card__text {
   color: var(--gray-color);
 }
+.card__title {
+  font-size: 14px;
+  line-height: 1.142;
+  text-transform: uppercase;
+}
+.card__text,
+.team-card__text,
+address {
+  font-weight: 400;
+}
+.card__text {
+  line-height: 1.71;
+}
+.work-title,
+.commands-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+/*Команда*/
 .commands {
   background-color: #f5f4fa;
 }
-.paragr-commands1,
-.paragr-commands2,
-.paragr-commands3,
-.paragr-commands4 {
-  color: var(--gray-color);
+.commands {
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
 }
+.commands-title-name {
+  font-weight: 500;
+}
+/*Футэр*/
 footer {
   background-color: #2f303a;
 }
-.footlogo {
+.footlogo .foot-span2 {
   color: var(--withe-color);
+}
+.footlogo .foot-span1,
+.footlogo span {
+  color: var(--blue-color);
 }
 .foot-adress {
   color: var(--withe-color);
@@ -67,4 +139,8 @@ footer {
 .foot-mail,
 .foot-number {
   color: rgba(255, 255, 255, 0.6);
+}
+address p {
+  font-style: normal;
+  line-height: 1.71;
 }

@@ -5,56 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="/" class="logo"><span>web</span>studio</a>
-        <ul>
-          <li class="navi1"><a href="/">Студия</a></li>
-          <li class="navi2"><a href="/">Портфолио</a></li>
-          <li class="navi3"><a href="/">Контакты</a></li>
-        </ul>
-        <ul>
-          <li class="navimail">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+    <header class="header">
+      <nav class="header-nav">
+        <a href="/" class="logo">
+          <span class="logo-span1">Web</span
+          ><span class="logo-span2">Studio</span></a
+        >
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a href="/" class="link">Студия</a>
           </li>
-          <li class="naviphone"><a href="/">+38 096 111 11 11</a></li>
+          <li class="header-nav__item">
+            <a href="/" class="link">Портфолио</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="/" class="link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="header-nav__contacts">
+          <li class="navimail">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="naviphone">
+            <a href="/" class="contacts__link">+38 096 111 11 11</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="titlelist">
-        <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+        <h1 class="titlelist__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
         <button type="button" class="button">Заказать услугу</button>
       </section>
       <section class="feature">
-        <ul>
-          <li>
-            <h3>Внимание к деталям</h3>
-            <p class="paragr1">
+        <ul class="feature-list">
+          <li class="feature-card card">
+            <h3 class="card__title">Внимание к деталям</h3>
+            <p class="card__text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
-            <h3>Пунктуальность</h3>
-            <p class="paragr2">
+          <li class="feature-card card">
+            <h3 class="card__title">Пунктуальность</h3>
+            <p class="card__text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
-            <h3>Планирование</h3>
-            <p class="paragr3">
+          <li class="feature-card card">
+            <h3 class="card__title">Планирование</h3>
+            <p class="card__text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
-            <h3>Современные технологии</h3>
-            <p class="paragr4">
+          <li class="feature-card card">
+            <h3 class="card__title">Современные технологии</h3>
+            <p class="card__text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -62,7 +87,7 @@
         </ul>
       </section>
       <section class="work">
-        <h2>Чем мы занимаемся</h2>
+        <h2 class="work-title">Чем мы занимаемся</h2>
         <ul>
           <li><img src="images/box1.jpg" alt="pc" /></li>
           <li><img src="images/box2.jpg" alt="phone" /></li>
@@ -70,34 +95,37 @@
         </ul>
       </section>
       <section class="commands">
-        <h2>Наша команда</h2>
+        <h2 class="commands-title">Наша команда</h2>
         <ul>
           <li>
             <img src="images/img.jpg" alt="igor" />
-            <h3>Игорь Демьяненко</h3>
-            <p class="paragr-commands1">Product Designer</p>
+            <h3 class="commands-title-name">Игорь Демьяненко</h3>
+            <p class="team-card__text">Product Designer</p>
           </li>
           <li>
             <img src="images/img(1).jpg" alt="igor" />
-            <h3>Ольга Репина</h3>
-            <p class="paragr-commands2">Frontend Developer</p>
+            <h3 class="commands-title-name">Ольга Репина</h3>
+            <p class="team-card__text">Frontend Developer</p>
           </li>
           <li>
             <img src="images/img(2).jpg" alt="igor" />
-            <h3>Николай Тарасов</h3>
-            <p class="paragr-commands3">Marketing</p>
+            <h3 class="commands-title-name">Николай Тарасов</h3>
+            <p class="team-card__text">Marketing</p>
           </li>
           <li>
             <img src="images/img(3).jpg" alt="igor" />
-            <h3>Михаил Ермаков</h3>
-            <p class="paragr-commands4">UI Designer</p>
+            <h3 class="commands-title-name">Михаил Ермаков</h3>
+            <p class="team-card__text">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <footer>
+      <a href="/" class="footlogo">
+        <span class="foot-span1">Web</span>
+        <span class="foot-span2">Studio</span>
+      </a>
       <address>
-        <a href="/" class="footlogo"><span>web</span>studio</a>
         <p class="foot-adress">г. Киев, пр-т Леси Украинки, 26</p>
         <p class="foot-mail">info@example.com</p>
         <p class="foot-number">+38 099 111 11 11</p>

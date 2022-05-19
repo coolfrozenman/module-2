@@ -5,6 +5,16 @@
   --blue-color: #2196f3;
   --primary-font-stack: "Roboto", sans-serif;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
   background-color: var(--withe-color);
   color: var(--black-color);
@@ -20,24 +30,25 @@ a,
   text-decoration: none;
 }
 /*Панэль навигации*/
-.logo .logo-span1,
-.footlogo span {
-  color: var(--blue-color);
-}
-.logo .logo-span2 {
-  color: var(--black-color);
-}
-.logo-span1,
-.logo-span2,
-.foot-span1,
-.foot-span2 {
+
+.logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.5px;
+  color: var(--blue-color);
 }
+
+.header .logo-span {
+  color: var(--black-color);
+}
+
+.footer .logo-span {
+  color: var(--withe-color);
+}
+
 .link {
   color: var(--black-color);
 }
@@ -123,16 +134,11 @@ address {
   font-weight: 500;
 }
 /*Футэр*/
-footer {
+
+.footer {
   background-color: #2f303a;
 }
-.footlogo .foot-span2 {
-  color: var(--withe-color);
-}
-.footlogo .foot-span1,
-.footlogo span {
-  color: var(--blue-color);
-}
+
 .foot-adress {
   color: var(--withe-color);
 }

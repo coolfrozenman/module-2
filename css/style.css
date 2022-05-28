@@ -22,15 +22,25 @@ body {
   font-size: 14px;
   font-style: normal;
   letter-spacing: 0.5px;
+  margin: 0 auto;
+  width: 1600px;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+}
 a,
 .button {
   cursor: pointer;
   text-decoration: none;
 }
-/*Панэль навигации*/
 
+/*Панэль навигации*/
+.header {
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .logo {
   font-family: "Raleway";
   font-style: normal;
@@ -39,6 +49,8 @@ a,
   line-height: 1.19;
   letter-spacing: 0.5px;
   color: var(--blue-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header .logo-span {
@@ -65,12 +77,44 @@ a,
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.3px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav__list {
+  display: flex;
+  list-style-type: none;
+  padding: 32px 0;
+  margin: auto 333px auto 93px;
+}
+.header-nav__item:not(:first-child) {
+  margin-left: 50px;
+}
+.header-nav__contacts {
+  display: flex;
+  list-style-type: none;
+  padding: 32px 0;
+  margin: 0;
+}
+.naviphone {
+  margin-left: 48px;
 }
 
 /*баннер заказать*/
 .titlelist {
   background-color: #2f303a;
   color: var(--withe-color);
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titlelist__title {
+  width: 696px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  letter-spacing: 3.6px;
 }
 .titlelist .button {
   background-color: var(--blue-color);
@@ -82,6 +126,10 @@ a,
   line-height: 1.875;
   text-align: center;
   letter-spacing: 1px;
+  padding: 10px 32px;
+
+  border: 0;
+  border-radius: 4px;
 }
 h1 {
   font-weight: 900;
@@ -97,6 +145,24 @@ h2,
   font-weight: 700;
 }
 /*Особенности */
+.feature {
+  margin: 94px auto;
+}
+.feature-list {
+  width: 1170px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0px;
+}
+.feature-card {
+  width: 270px;
+  padding: 0px;
+}
+.feature-card:not(:last-child) {
+  margin-right: 30px;
+}
 .card__text,
 .team-card__text {
   color: var(--gray-color);
@@ -105,6 +171,11 @@ h2,
   font-size: 14px;
   line-height: 1.142;
   text-transform: uppercase;
+  margin: 0px;
+}
+.card__text {
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 .card__text,
 .team-card__text,
@@ -114,24 +185,63 @@ address {
 .card__text {
   line-height: 1.71;
 }
+/* работа */
+.work {
+  margin: 94px auto;
+}
 .work-title,
 .commands-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.work {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 94px;
+}
+.work-images {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 /*Команда*/
-.commands {
-  background-color: #f5f4fa;
-}
+
 .commands {
   font-size: 16px;
   line-height: 1.1875;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 94px 0;
+  background-color: #f5f4fa;
 }
 .commands-title-name {
   font-weight: 500;
+}
+.commands-foto {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.commands-foto li {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.foto-team {
+  width: 260px;
 }
 /*Футэр*/
 
@@ -146,7 +256,22 @@ address {
 .foot-number {
   color: rgba(255, 255, 255, 0.6);
 }
-address p {
+.address p {
   font-style: normal;
   line-height: 1.71;
+  margin: 0;
+}
+.footer .logo,
+.address {
+  margin-left: 215px;
+  padding: 0;
+}
+.foot-block {
+  padding: 60px 0;
+}
+.address {
+  margin-top: 20px;
+}
+.address p:not(:last-child) {
+  margin-bottom: 9px;
 }

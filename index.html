@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Главная</title>
+    <link rel="stylesheet" href="./css/normailze.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -53,28 +54,28 @@
       </section>
       <section class="feature">
         <ul class="feature-list">
-          <li class="feature-card card">
+          <li class="feature-card">
             <h3 class="card__title">Внимание к деталям</h3>
             <p class="card__text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li class="feature-card card">
+          <li class="feature-card">
             <h3 class="card__title">Пунктуальность</h3>
             <p class="card__text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li class="feature-card card">
+          <li class="feature-card">
             <h3 class="card__title">Планирование</h3>
             <p class="card__text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li class="feature-card card">
+          <li class="feature-card">
             <h3 class="card__title">Современные технологии</h3>
             <p class="card__text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -85,7 +86,7 @@
       </section>
       <section class="work">
         <h2 class="work-title">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="work-images">
           <li><img src="images/box1.jpg" alt="pc" /></li>
           <li><img src="images/box2.jpg" alt="phone" /></li>
           <li><img src="images/box3.jpg" alt="the table" /></li>
@@ -93,24 +94,24 @@
       </section>
       <section class="commands">
         <h2 class="commands-title">Наша команда</h2>
-        <ul>
+        <ul class="commands-foto">
           <li>
-            <img src="images/img.jpg" alt="igor" />
+            <img src="images/img.jpg" alt="igor" class="foto-team" />
             <h3 class="commands-title-name">Игорь Демьяненко</h3>
             <p class="team-card__text">Product Designer</p>
           </li>
           <li>
-            <img src="images/img(1).jpg" alt="igor" />
+            <img src="images/img(1).jpg" alt="igor" class="foto-team" />
             <h3 class="commands-title-name">Ольга Репина</h3>
             <p class="team-card__text">Frontend Developer</p>
           </li>
           <li>
-            <img src="images/img(2).jpg" alt="igor" />
+            <img src="images/img(2).jpg" alt="igor" class="foto-team" />
             <h3 class="commands-title-name">Николай Тарасов</h3>
             <p class="team-card__text">Marketing</p>
           </li>
           <li>
-            <img src="images/img(3).jpg" alt="igor" />
+            <img src="images/img(3).jpg" alt="igor" class="foto-team" />
             <h3 class="commands-title-name">Михаил Ермаков</h3>
             <p class="team-card__text">UI Designer</p>
           </li>
@@ -118,12 +119,14 @@
       </section>
     </main>
     <footer class="footer">
-      <a href="/" class="logo">Web<span class="logo-span">Studio</span></a>
-      <address>
-        <p class="foot-adress">г. Киев, пр-т Леси Украинки, 26</p>
-        <p class="foot-mail">info@example.com</p>
-        <p class="foot-number">+38 099 111 11 11</p>
-      </address>
+      <div class="foot-block">
+        <a href="/" class="logo">Web<span class="logo-span">Studio</span></a>
+        <address class="address">
+          <p class="foot-adress">г. Киев, пр-т Леси Украинки, 26</p>
+          <p class="foot-mail">info@example.com</p>
+          <p class="foot-number">+38 099 111 11 11</p>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

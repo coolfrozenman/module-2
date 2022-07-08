@@ -1,128 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио</title>
-    <link rel="stylesheet" href="./css/normailze.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/portfolio.css" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="header-nav">
-        <a href="/" class="logo">Web<span class="logo-span">Studio</span></a>
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a href="/" class="link">Студия</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="portfolio.html" class="link">Портфолио</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="/" class="link">Контакты</a>
-          </li>
-        </ul>
-        <ul class="header-nav__contacts">
-          <li class="navimail">
-            <a href="mailto:info@devstudio.com" class="contacts__link">
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="naviphone">
-            <a href="/" class="contacts__link">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="galary-main">
-      <ul class="galary-nav">
-        <li>
-          <button class="galary-button">Все</button></a>
-        </li>
-        <li>
-          <button class="galary-button">Веб-сайты</button>
-        </li>
-        <li>
-          <button class="galary-button">Приложения</button>
-        </li>
-        <li>
-          <button class="galary-button">Дизайн</button>
-        </li>
-        <li>
-          <button class="galary-button">Маркетинг</button>
-        </li>
-      </ul>
-      <ul class="galary-item">
-        <li class="galary-item-list">
-          <img src="./images/galary/img (1).jpg" alt="" />
-          <h2>Технокряк</h2>
-          <p>Веб-сайт</p>
-        </li>
-        <li class="galary-item-list">
-          <img src="./images/galary/img (2).jpg" alt="" />
-          <h2>Постер New Orlean vs Golden Star</h2>
-          <p>Дизайн</p>
-        </li>
-        <li class="galary-item-list">
-          <img src="./images/galary/img (3).jpg" alt="" />
-          <h2>Ресторан Seafood</h2>
-          <p>Приложение</p>
-        </li>
-        <li class="galary-item-list">
-          <img src="./images/galary/img (4).jpg" alt="" />
-          <h2>Проект Prime</h2>
-          <p>Маркетинг</p>
-        </li>
-        <li class="galary-item-list">
-          <img src="./images/galary/img (5).jpg" alt="" />
-          <h2>Проект Boxes</h2>
-          <p>Приложение</p>
-        </li>
-        <li class="galary-item-list">
-          <img src="./images/galary/img (6).jpg" alt="" />
-          <h2>Inspiration has no Borders</h2>
-          <p>Веб-сайт</p>
-        </li>
-        <li class="galary-item-list">
-          <img src="./images/galary/img (7).jpg" alt="" />
-          <h2>Издание Limited Edition</h2>
-          <p>Дизайн</p>
-        </li>
-        <li class="galary-item-list">
-          <img src="./images/galary/img (8).jpg" alt="" />
-          <h2>Проект LAB</h2>
-          <p>Маркетинг</p>
-        </li>
-        <li class="galary-item-list">
-          <img src="./images/galary/img (9).jpg" alt="" />
-          <h2>Growing Business</h2>
-          <p>Приложение</p>
-        </li>
-      </ul>
-    </main>
 
-    <footer class="footer">
-      <div class="foot-block">
-        <a href="/" class="logo">Web<span class="logo-span">Studio</span></a>
-        <address class="address">
-          <p class="foot-adress">г. Киев, пр-т Леси Украинки, 26</p>
-          <p class="foot-mail">info@example.com</p>
-          <p class="foot-number">11 11 11</p>
-        </address>
-      </div>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио</title>
+  <link rel="stylesheet" href="./css/normailze.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/portfolio.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header-nav">
+      <a href="/" class="logo">Web<span class="logo-span">Studio</span></a>
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a href="index.html" class="link">Студия</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="portfolio.html" class="link">Портфолио</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="/" class="link">Контакты</a>
+        </li>
+      </ul>
+      <ul class="header-nav__contacts">
+        <li class="navimail">
+          <a href="mailto:info@devstudio.com" class="contacts__link">
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="naviphone">
+          <a href="/" class="contacts__link">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="galary-main">
+    <ul class="galary-nav">
+      <li>
+        <button class="galary-button">Все</button></a>
+      </li>
+      <li>
+        <button class="galary-button">Веб-сайты</button>
+      </li>
+      <li>
+        <button class="galary-button">Приложения</button>
+      </li>
+      <li>
+        <button class="galary-button">Дизайн</button>
+      </li>
+      <li>
+        <button class="galary-button">Маркетинг</button>
+      </li>
+    </ul>
+    <ul class="galary-item">
+      <li class="galary-item-list">
+        <img src="./images/galary/img (1).png" alt="" />
+        <div class="galary-box">
+          <h2 class="galary-title">Технокряк</h2>
+          <p class="galary-words">Веб-сайт</p>
+        </div>
+      </li>
+      <li class="galary-item-list">
+        <img src="./images/galary/img (2).jpg" alt="" />
+        <div class="galary-box">
+          <h2 class="galary-title">Постер New Orlean vs Golden Star</h2>
+          <p class="galary-words">Дизайн</p>
+        </div>
+      </li>
+      <li class="galary-item-list">
+        <img src="./images/galary/img (3).jpg" alt="" />
+        <div class="galary-box">
+          <h2 class="galary-title">Ресторан Seafood</h2>
+          <p class="galary-words">Приложение</p>
+        </div>
+      </li>
+      <li class="galary-item-list">
+        <img src="./images/galary/img (4).jpg" alt="" />
+        <div class="galary-box">
+          <h2 class="galary-title">Проект Prime</h2>
+          <p class="galary-words">Маркетинг</p>
+        </div>
+      </li>
+      <li class="galary-item-list">
+        <img src="./images/galary/img (5).jpg" alt="" />
+        <div class="galary-box">
+          <h2 class="galary-title">Проект Boxes</h2>
+          <p class="galary-words">Приложение</p>
+        </div>
+      </li>
+      <li class="galary-item-list">
+        <img src="./images/galary/img (6).jpg" alt="" />
+        <div class="galary-box">
+          <h2 class="galary-title">Inspiration has no Borders</h2>
+          <p class="galary-words">Веб-сайт</p>
+        </div>
+      </li>
+      <li class="galary-item-list">
+        <img src="./images/galary/img (7).jpg" alt="" />
+        <div class="galary-box">
+          <h2 class="galary-title">Издание Limited Edition</h2>
+          <p class="galary-words">Дизайн</p>
+        </div>
+      </li>
+      <li class="galary-item-list">
+        <img src="./images/galary/img (8).jpg" alt="" />
+        <div class="galary-box">
+          <h2 class="galary-title">Проект LAB</h2>
+          <p class="galary-words">Маркетинг</p>
+        </div>
+      </li>
+      <li class="galary-item-list">
+        <img src="./images/galary/img (9).jpg" alt="" />
+        <div class="galary-box">
+          <h2 class="galary-title">Growing Business</h2>
+          <p class="galary-words">Приложение</p>
+        </div>
+      </li>
+    </ul>
+    <!-- <div class="container">
+        <ul class="gallery">
+          <li>
+            <img src="./images/galary/img (9).jpg" alt="" class="gallery__img">
+            <div class="gallery-description">
+              <h2 class="gallery-description__title">Growing Business</h2>
+              <p class="gallery-description__caption">Приложение</p>
+            </div>
+          </li>
+          <li>
+            <img src="./images/galary/img (9).jpg" alt="" class="gallery__img">
+            <div class="gallery-description">
+              <h2 class="gallery-description__title">Growing Business</h2>
+              <p class="gallery-description__caption">Приложение</p>
+            </div>
+          </li>
+          <li class="gallery-item">
+            <img src="./images/galary/img (9).jpg" alt="" class="gallery__img">
+            <div class="gallery-description">
+              <h2 class="gallery-description__title">Growing Business</h2>
+              <p class="gallery-description__caption">Приложение</p>
+            </div>
+          </li>
+          <li>
+            <img src="./images/galary/img (9).jpg" alt="" class="gallery__img">
+            <div class="gallery-description">
+              <h2 class="gallery-description__title">Growing Business</h2>
+              <p class="gallery-description__caption">Приложение</p>
+            </div>
+          </li>
+          <li>
+            <img src="./images/galary/img (9).jpg" alt="" class="gallery__img">
+            <div class="gallery-description">
+              <h2 class="gallery-description__title">Growing Business</h2>
+              <p class="gallery-description__caption">Приложение</p>
+            </div>
+          </li>
+          <li>
+            <img src="./images/galary/img (9).jpg" alt="" class="gallery__img">
+            <div class="gallery-description">
+              <h2 class="gallery-description__title">Growing Business</h2>
+              <p class="gallery-description__caption">Приложение</p>
+            </div>
+          </li>
+        </ul>
+      </div> -->
+
+  </main>
+
+  <footer class="footer">
+    <div class="foot-block">
+      <a href="/" class="logo">Web<span class="logo-span">Studio</span></a>
+      <address class="address">
+        <p class="foot-adress">г. Киев, пр-т Леси Украинки, 26</p>
+        <p class="foot-mail">info@example.com</p>
+        <p class="foot-number">11 11 11</p>
+      </address>
+    </div>
+  </footer>
+</body>
+
 </html>

@@ -1,124 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная</title>
-    <link rel="stylesheet" href="./css/normailze.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="header-nav">
-        <a href="/" class="logo">Web<span class="logo-span">Studio</span></a>
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a href="/" class="link">Студия</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="./portfolio.html" class="link">Портфолио</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="/" class="link">Контакты</a>
-          </li>
-        </ul>
-        <ul class="header-nav__contacts">
-          <li class="navimail">
-            <a href="mailto:info@devstudio.com" class="contacts__link">
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="naviphone">
-            <a href="/" class="contacts__link">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="titlelist">
-        <h1 class="titlelist__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button type="button" class="button">Заказать услугу</button>
-      </section>
-      <section class="feature">
-        <ul class="feature-list">
-          <li class="feature-card">
-            <h3 class="card__title">Внимание к деталям</h3>
-            <p class="card__text">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li class="feature-card">
-            <h3 class="card__title">Пунктуальность</h3>
-            <p class="card__text">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li class="feature-card">
-            <h3 class="card__title">Планирование</h3>
-            <p class="card__text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li class="feature-card">
-            <h3 class="card__title">Современные технологии</h3>
-            <p class="card__text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="work">
-        <h2 class="work-title">Чем мы занимаемся</h2>
-        <ul class="work-images">
-          <li><img src="images/box1.jpg" alt="pc" /></li>
-          <li><img src="images/box2.jpg" alt="phone" /></li>
-          <li><img src="images/box3.jpg" alt="the table" /></li>
-        </ul>
-      </section>
-      <section class="commands">
-        <h2 class="commands-title">Наша команда</h2>
-        <ul class="commands-photo">
-          <li>
-            <img src="images/img.jpg" alt="igor" class="photo-team" />
-            <h3 class="commands-title-name">Игорь Демьяненко</h3>
-            <p class="team-card__text">Product Designer</p>
-          </li>
-          <li>
-            <img src="images/img(1).jpg" alt="igor" class="photo-team" />
-            <h3 class="commands-title-name">Ольга Репина</h3>
-            <p class="team-card__text">Frontend Developer</p>
-          </li>
-          <li>
-            <img src="images/img(2).jpg" alt="igor" class="photo-team" />
-            <h3 class="commands-title-name">Николай Тарасов</h3>
-            <p class="team-card__text">Marketing</p>
-          </li>
-          <li>
-            <img src="images/img(3).jpg" alt="igor" class="photo-team" />
-            <h3 class="commands-title-name">Михаил Ермаков</h3>
-            <p class="team-card__text">UI Designer</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="footer">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная</title>
+  <link rel="stylesheet" href="./css/normailze.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header-nav">
+      <a href="/" class="logo">Web<span class="logo-span">Studio</span></a>
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a href="index.html" class="link">Студия</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="./portfolio.html" class="link">Портфолио</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="/" class="link">Контакты</a>
+        </li>
+      </ul>
+      <ul class="header-nav__contacts">
+        <li class="navimail">
+          <div class="header-nav__contacts-icon">
+            <svg>
+              <use href="./images/sprite.svg#mail"></use>
+            </svg>
+          </div>
+          <a href="mailto:info@devstudio.com" class="contacts__link">
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="naviphone">
+          <div class="header-nav__contacts-icon">
+            <svg>
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
+          </div>
+          <a href="/" class="contacts__link">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="titlelist">
+      <h1 class="titlelist__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+      <button type="button" class="button">Заказать услугу</button>
+    </section>
+    <section class="feature">
+      <ul class="feature-list">
+        <li class="feature-card">
+          <div class="plate feature-card__icon">
+            <!-- svg -->
+          </div>
+          <h3 class="card__title">Внимание к деталям</h3>
+          <p class="card__text">
+            Идейные соображения, а также начало повседневной работы по
+            формированию позиции.
+          </p>
+        </li>
+        <li class="feature-card">
+          <div class="time"></div>
+          <h3 class="card__title">Пунктуальность</h3>
+          <p class="card__text">
+            Задача организации, в особенности же рамки и место обучения кадров
+            влечет за собой.
+          </p>
+        </li>
+        <li class="feature-card">
+          <div class="notebook"></div>
+          <h3 class="card__title">Планирование</h3>
+          <p class="card__text">
+            Равным образом консультация с широким активом в значительной
+            степени обуславливает.
+          </p>
+        </li>
+        <li class="feature-card">
+          <div class="austronavt"></div>
+          <h3 class="card__title">Современные технологии</h3>
+          <p class="card__text">
+            Значимость этих проблем настолько очевидна, что реализация
+            плановых заданий.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="work">
+      <h2 class="work-title">Чем мы занимаемся</h2>
+      <ul class="work-images">
+        <li class="work-img__item">
+          <div class="overlay">
+            <p class="work-img__text"> ipsum dolor sit amet consectetur adipisicing elit. Modi facilis quasi harum
+              commodi at. Adipisci nesciunt libero earum tempora debitis aut inventore veniam enim maiores ab, quia unde
+              necessitatibus eos blanditiis in perferendis? Quae ipsa dolor veniam officiis aliquid. Aspernatur porro
+              voluptas voluptate excepturi ea ad, sapiente, dolor nulla assumenda facere obcaecati similique repellendus
+              consectetur doque quo, commodi suscipit do ut! Similique, corporis enim expedita excepturi, aut
+              fuga eius perferendis inventore ab mollitia hic cumque deserunt facere commodi minus modi ad itaque.
+              Fugit, minima nihil distinctio facilis suscipit eveniet officiis accusamus vitae provident pariatur unde
+              consequatur perferendis eaque similique. Dicta.</p>
+            <ul class="work-icon">
+              <li class="icon-insta"></li>
+              <li class="icon-twit"></li>
+              <li class="icon-fb"></li>
+              <li class="icon-linkid"></li>
+            </ul>
+          </div><img src="images/box1.jpg" alt="pc" />
+        </li>
+        <li class="work-img__item">
+          <div class="overlay">
+            <p class="work-img__text"> ipsum dolor sit amet consectetur adipisicing elit. Modi facilis quasi harum
+              commodi at. Adipisci nesciunt libero earum tempora debitis aut inventore veniam enim maiores ab, quia unde
+              necessitatibus eos blanditiis in perferendis? Quae ipsa dolor veniam officiis aliquid. Aspernatur porro
+              voluptas voluptate excepturi ea ad, sapiente, dolor nulla assumenda facere obcaecati similique repellendus
+              consectetur doque quo, commodi suscipit do ut! Similique, corporis enim expedita excepturi, aut
+              fuga eius perferendis inventore ab mollitia hic cumque deserunt facere commodi minus modi ad itaque.
+              Fugit, minima nihil distinctio facilis suscipit eveniet officiis accusamus vitae provident pariatur unde
+              consequatur perferendis eaque similique. Dicta.</p>
+            <ul class="work-icon">
+              <li class="icon-insta"></li>
+              <li class="icon-twit"></li>
+              <li class="icon-fb"></li>
+              <li class="icon-linkid"></li>
+            </ul>
+          </div><img src="images/box2.jpg" alt="phone" />
+        </li>
+        <li class="work-img__item">
+          <div class="overlay">
+            <p class="work-img__text"> ipsum dolor sit amet consectetur adipisicing elit. Modi facilis quasi harum
+              commodi at. Adipisci nesciunt libero earum tempora debitis aut inventore veniam enim maiores ab, quia unde
+              necessitatibus eos blanditiis in perferendis? Quae ipsa dolor veniam officiis aliquid. Aspernatur porro
+              voluptas voluptate excepturi ea ad, sapiente, dolor nulla assumenda facere obcaecati similique repellendus
+              consectetur doque quo, commodi suscipit do ut! Similique, corporis enim expedita excepturi, aut
+              fuga eius perferendis inventore ab mollitia hic cumque deserunt facere commodi minus modi ad itaque.
+              Fugit, minima nihil distinctio facilis suscipit eveniet officiis accusamus vitae provident pariatur unde
+              consequatur perferendis eaque similique. Dicta.</p>
+            <ul class="work-icon">
+              <li class="icon-insta"></li>
+              <li class="icon-twit"></li>
+              <li class="icon-fb"></li>
+              <li class="icon-linkid"></li>
+            </ul>
+
+          </div><img src="images/box3.jpg" alt="the table" />
+        </li>
+      </ul>
+    </section>
+    <section class="commands">
+      <h2 class="commands-title">Наша команда</h2>
+      <ul class="commands-photo">
+        <li>
+          <img src="images/img.jpg" alt="igor" class="photo-team" />
+          <h3 class="commands-title-name">Игорь Демьяненко</h3>
+          <p class="team-card__text">Product Designer</p>
+          <ul class="commands-icon">
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <img src="images/img(1).jpg" alt="igor" class="photo-team" />
+          <h3 class="commands-title-name">Ольга Репина</h3>
+          <p class="team-card__text">Frontend Developer</p>
+          <ul class="commands-icon">
+            <li class="icon-insta"></li>
+            <li class="icon-twit"></li>
+            <li class="icon-fb"></li>
+            <li class="icon-linkid"></li>
+          </ul>
+        </li>
+        <li>
+          <img src="images/img(2).jpg" alt="igor" class="photo-team" />
+          <h3 class="commands-title-name">Николай Тарасов</h3>
+          <p class="team-card__text">Marketing</p>
+          <ul class="commands-icon">
+            <li class="icon-insta"></li>
+            <li class="icon-twit"></li>
+            <li class="icon-fb"></li>
+            <li class="icon-linkid"></li>
+          </ul>
+        </li>
+        <li>
+          <img src="images/img(3).jpg" alt="igor" class="photo-team" />
+          <h3 class="commands-title-name">Михаил Ермаков</h3>
+          <p class="team-card__text">UI Designer</p>
+          <ul class="commands-icon">
+            <li class="icon-insta"></li>
+            <li class="icon-twit"></li>
+            <li class="icon-fb"></li>
+            <li class="icon-linkid"></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="regular">
+      <h2 class="regular__title">Постоянные клиенты</h2>
+      <ul class="regular__list">
+        <li class="regular-list__item">
+          <svg>
+            <use href='./images/sprite.svg#logo1' />
+          </svg>
+        </li>
+        <li class="regular-list__item">
+          <svg>
+            <use href='./images/sprite.svg#logo2' />
+          </svg>
+        </li>
+        <li class="regular-list__item">
+          <svg>
+            <use href='./images/sprite.svg#logo3' />
+          </svg>
+        </li>
+        <li class="regular-list__item">
+          <svg>
+            <use href='./images/sprite.svg#logo4' />
+          </svg>
+        </li>
+        <li class="regular-list__item">
+          <svg>
+            <use href='./images/sprite.svg#logo5' />
+          </svg>
+        </li>
+        <li class="regular-list__item">
+          <svg>
+            <use href='./images/sprite.svg#logo6' />
+          </svg>
+        </li>
+      </ul>
+
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="foot-box">
       <div class="foot-block">
         <a href="/" class="logo">Web<span class="logo-span">Studio</span></a>
         <address class="address">
@@ -127,6 +278,17 @@
           <p class="foot-number">+38 099 111 11 11</p>
         </address>
       </div>
-    </footer>
-  </body>
+      <div class="foot-icon">
+        <h2>ПРИСОЕДИНЯЙТЕСЬ</h2>
+        <ul class="commands-icon">
+          <li class="icon-insta"></li>
+          <li class="icon-twit"></li>
+          <li class="icon-fb"></li>
+          <li class="icon-linkid"></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

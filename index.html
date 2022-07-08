@@ -52,6 +52,11 @@
           <a href="/" class="contacts__link">+38 096 111 11 11</a>
         </li>
       </ul>
+      <button class="nav-toggler" aria-label="navigation toggler">
+        <svg class="nav-toggler__icon">
+          <use href="./images/burger-nav.svg#icon"></use>
+        </svg>
+      </button>
     </nav>
   </header>
   <main>
@@ -62,8 +67,10 @@
     <section class="feature">
       <ul class="feature-list">
         <li class="feature-card">
-          <div class="plate feature-card__icon">
-            <!-- svg -->
+          <div class="feature-card__icon">
+            <svg>
+              <use href="./images/feature/antenna 1.svg#feature"></use>
+            </svg>
           </div>
           <h3 class="card__title">Внимание к деталям</h3>
           <p class="card__text">
@@ -72,7 +79,11 @@
           </p>
         </li>
         <li class="feature-card">
-          <div class="time"></div>
+          <div class="feature-card__icon">
+            <svg>
+              <use href="./images/feature/clock 1.svg#feature"></use>
+            </svg>
+          </div>
           <h3 class="card__title">Пунктуальность</h3>
           <p class="card__text">
             Задача организации, в особенности же рамки и место обучения кадров
@@ -80,7 +91,11 @@
           </p>
         </li>
         <li class="feature-card">
-          <div class="notebook"></div>
+          <div class="feature-card__icon">
+            <svg>
+              <use href="./images/feature/diagram 1.svg#feature"></use>
+            </svg>
+          </div>
           <h3 class="card__title">Планирование</h3>
           <p class="card__text">
             Равным образом консультация с широким активом в значительной
@@ -88,7 +103,11 @@
           </p>
         </li>
         <li class="feature-card">
-          <div class="austronavt"></div>
+          <div class="feature-card__icon">
+            <svg>
+              <use href="./images/feature/astronaut 1.svg#feature"></use>
+            </svg>
+          </div>
           <h3 class="card__title">Современные технологии</h3>
           <p class="card__text">
             Значимость этих проблем настолько очевидна, что реализация
@@ -194,39 +213,109 @@
               </a>
             </li>
           </ul>
-        </li>
-
         <li>
           <img src="images/img(1).jpg" alt="igor" class="photo-team" />
           <h3 class="commands-title-name">Ольга Репина</h3>
           <p class="team-card__text">Frontend Developer</p>
           <ul class="commands-icon">
-            <li class="icon-insta"></li>
-            <li class="icon-twit"></li>
-            <li class="icon-fb"></li>
-            <li class="icon-linkid"></li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </li>
+
         <li>
           <img src="images/img(2).jpg" alt="igor" class="photo-team" />
           <h3 class="commands-title-name">Николай Тарасов</h3>
           <p class="team-card__text">Marketing</p>
           <ul class="commands-icon">
-            <li class="icon-insta"></li>
-            <li class="icon-twit"></li>
-            <li class="icon-fb"></li>
-            <li class="icon-linkid"></li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </li>
+
         <li>
           <img src="images/img(3).jpg" alt="igor" class="photo-team" />
           <h3 class="commands-title-name">Михаил Ермаков</h3>
           <p class="team-card__text">UI Designer</p>
           <ul class="commands-icon">
-            <li class="icon-insta"></li>
-            <li class="icon-twit"></li>
-            <li class="icon-fb"></li>
-            <li class="icon-linkid"></li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="commands-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </li>
       </ul>
@@ -265,7 +354,6 @@
           </svg>
         </li>
       </ul>
-
     </section>
   </main>
   <footer class="footer">

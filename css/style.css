@@ -34,7 +34,9 @@ a,
   cursor: pointer;
   text-decoration: none;
 }
-
+.main {
+  padding: 0 15px;
+}
 /*Панэль навигации*/
 .header {
   border: #f5f4fa 1px solid;
@@ -185,9 +187,6 @@ a,
 }
 
 @media screen and (max-width: 767px) {
-  .header-nav {
-    /* flex-direction: column; */
-  }
   .logo {
     justify-content: center;
   }
@@ -275,6 +274,7 @@ a,
   margin-top: 0px;
   margin-bottom: 30px;
   letter-spacing: 3.6px;
+  font-size: 26px;
 }
 .titlelist .button {
   background-color: var(--blue-color);
@@ -325,6 +325,7 @@ h2,
     background-image: url(../images/Header\ img.png);
   }
 }
+
 @media screen and (max-width: 767px) {
   .titlelist {
     background-image: url(../images/HeaderPhone.png);
@@ -586,11 +587,12 @@ h2,
 .commands-photo li {
   background-color: #fff;
   border-radius: 4px;
+  transform: scale(1);
+  transition: transform 300ms linear, box-shadow 400ms linear;
 }
 .commands-photo li:hover {
   transform: scale(1.15);
   cursor: pointer;
-  transition: transform 300ms linear, box-shadow 400ms linear;
 }
 
 .commands-photo li:not(.commands-icon__item) {
@@ -599,7 +601,7 @@ h2,
 }
 
 .photo-team {
-  max-width: 450px;
+  width: 100%;
 }
 .commands-icon {
   display: flex;
@@ -656,7 +658,7 @@ h2,
   width: 44px;
   cursor: pointer;
 }
-.icon-insta {
+/* .icon-insta {
   background-image: url(../images/icons/instagram.svg);
 }
 .icon-insta:hover {
@@ -679,7 +681,7 @@ h2,
 }
 .icon-linkid:hover {
   background-image: url(../images/icons/Ellipse4.svg);
-}
+} */
 /* постоянные клиенты */
 .regular {
   padding-top: 60px;
@@ -697,7 +699,7 @@ h2,
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
-  width: 450px;
+  max-width: 450px;
   /* width: 1170px; */
   align-items: center;
   padding: 0px;
@@ -726,7 +728,8 @@ h2,
 }
 @media screen and (min-width: 767px) and (max-width: 1599px) {
   .regular__list {
-    width: 738px;
+    max-width: 738px;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -741,7 +744,8 @@ h2,
     padding-top: 94px;
   }
   .regular__list {
-    width: 1170px;
+    max-width: 1170px;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

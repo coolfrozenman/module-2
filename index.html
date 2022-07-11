@@ -23,13 +23,13 @@
       <a href="/" class="logo">Web<span class="logo-span">Studio</span></a>
       <ul class="header-nav__list">
         <li class="header-nav__item">
-          <a href="index.html" class="link">Студия</a>
+          <a href="index.html" class="header-nav__link">Студия</a>
         </li>
         <li class="header-nav__item">
-          <a href="./portfolio.html" class="link">Портфолио</a>
+          <a href="./portfolio.html" class="header-nav__link">Портфолио</a>
         </li>
         <li class="header-nav__item">
-          <a href="/" class="link">Контакты</a>
+          <a href="/" class="header-nav__link">Контакты</a>
         </li>
       </ul>
       <ul class="header-nav__contacts">
@@ -62,7 +62,7 @@
   <main>
     <section class="titlelist">
       <h1 class="titlelist__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-      <button type="button" class="button">Заказать услугу</button>
+      <button type="button" class="titlelist__button">Заказать услугу</button>
     </section>
     <section class="feature">
       <ul class="feature-list">
@@ -129,13 +129,8 @@
               fuga eius perferendis inventore ab mollitia hic cumque deserunt facere commodi minus modi ad itaque.
               Fugit, minima nihil distinctio facilis suscipit eveniet officiis accusamus vitae provident pariatur unde
               consequatur perferendis eaque similique. Dicta.</p>
-            <ul class="work-icon">
-              <li class="icon-insta"></li>
-              <li class="icon-twit"></li>
-              <li class="icon-fb"></li>
-              <li class="icon-linkid"></li>
-            </ul>
-          </div><img src="images/box1.jpg" alt="pc" />
+          </div>
+          <img src="images/box1.jpg" alt="pc" />
         </li>
         <li class="work-img__item">
           <div class="overlay">
@@ -147,13 +142,8 @@
               fuga eius perferendis inventore ab mollitia hic cumque deserunt facere commodi minus modi ad itaque.
               Fugit, minima nihil distinctio facilis suscipit eveniet officiis accusamus vitae provident pariatur unde
               consequatur perferendis eaque similique. Dicta.</p>
-            <ul class="work-icon">
-              <li class="icon-insta"></li>
-              <li class="icon-twit"></li>
-              <li class="icon-fb"></li>
-              <li class="icon-linkid"></li>
-            </ul>
-          </div><img src="images/box2.jpg" alt="phone" />
+          </div>
+          <img src="images/box2.jpg" alt="phone" />
         </li>
         <li class="work-img__item">
           <div class="overlay">
@@ -165,23 +155,17 @@
               fuga eius perferendis inventore ab mollitia hic cumque deserunt facere commodi minus modi ad itaque.
               Fugit, minima nihil distinctio facilis suscipit eveniet officiis accusamus vitae provident pariatur unde
               consequatur perferendis eaque similique. Dicta.</p>
-            <ul class="work-icon">
-              <li class="icon-insta"></li>
-              <li class="icon-twit"></li>
-              <li class="icon-fb"></li>
-              <li class="icon-linkid"></li>
-            </ul>
-
-          </div><img src="images/box3.jpg" alt="the table" />
+          </div>
+          <img src="images/box3.jpg" alt="the table" />
         </li>
       </ul>
     </section>
     <section class="commands">
       <h2 class="commands-title">Наша команда</h2>
       <ul class="commands-photo">
-        <li>
+        <li class="commands-photo__card">
           <img src="images/img.jpg" alt="igor" class="photo-team" />
-          <h3 class="commands-title-name">Игорь Демьяненко</h3>
+          <h3 class="commands-title__name">Игорь Демьяненко</h3>
           <p class="team-card__text">Product Designer</p>
           <ul class="commands-icon">
             <li class="commands-icon__item">
@@ -214,9 +198,9 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="commands-photo__card">
           <img src="images/img(1).jpg" alt="igor" class="photo-team" />
-          <h3 class="commands-title-name">Ольга Репина</h3>
+          <h3 class="commands-title__name">Ольга Репина</h3>
           <p class="team-card__text">Frontend Developer</p>
           <ul class="commands-icon">
             <li class="commands-icon__item">
@@ -249,9 +233,9 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="commands-photo__card">
           <img src="images/img(2).jpg" alt="igor" class="photo-team" />
-          <h3 class="commands-title-name">Николай Тарасов</h3>
+          <h3 class="commands-title__name">Николай Тарасов</h3>
           <p class="team-card__text">Marketing</p>
           <ul class="commands-icon">
             <li class="commands-icon__item">
@@ -284,9 +268,9 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="commands-photo__card">
           <img src="images/img(3).jpg" alt="igor" class="photo-team" />
-          <h3 class="commands-title-name">Михаил Ермаков</h3>
+          <h3 class="commands-title__name">Михаил Ермаков</h3>
           <p class="team-card__text">UI Designer</p>
           <ul class="commands-icon">
             <li class="commands-icon__item">
@@ -359,22 +343,62 @@
   </main>
   <footer class="footer">
     <div class="foot-box">
-      <div class="foot-block">
-        <a href="/" class="logo">Web<span class="logo-span">Studio</span></a>
-        <address class="address">
-          <p class="foot-adress">г. Киев, пр-т Леси Украинки, 26</p>
-          <p class="foot-mail">info@example.com</p>
-          <p class="foot-number">+38 099 111 11 11</p>
-        </address>
+      <div class="block-table">
+        <div class="foot-block">
+          <a href="/" class="foot__logo">Web<span class="foot-logo__span">Studio</span></a>
+          <address class="address">
+            <p class="foot-adress">г. Киев, пр-т Леси Украинки, 26</p>
+            <p class="foot-mail">info@example.com</p>
+            <p class="foot-number">+38 099 111 11 11</p>
+          </address>
+        </div>
+        <div class="foot-social">
+          <h2 class="social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+          <ul class="foot-icon">
+            <li class="foot-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="foot-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="foot-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="foot-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="foot-icon">
-        <h2>ПРИСОЕДИНЯЙТЕСЬ</h2>
-        <ul class="commands-icon">
-          <li class="icon-insta"></li>
-          <li class="icon-twit"></li>
-          <li class="icon-fb"></li>
-          <li class="icon-linkid"></li>
-        </ul>
+      <div class="subscription">
+        <h2 class="subscription__title">подпишитесь на рассылку</h2>
+        <form action="" class="subscription__form">
+          <input type="text" placeholder="E-mail" type="email" id="email" name="email" class="form__field">
+          <button type="button" class="form__button">
+            <span class="form__text">Подписаться</span>
+            <div class="form__svg">
+              <svg>
+                <use href="./images/svg/email.svg#email"></use>
+              </svg>
+            </div>
+          </button>
+        </form>
       </div>
     </div>
   </footer>

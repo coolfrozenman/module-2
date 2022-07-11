@@ -23,31 +23,46 @@
       <a href="/" class="logo">Web<span class="logo-span">Studio</span></a>
       <ul class="header-nav__list">
         <li class="header-nav__item">
-          <a href="index.html" class="link">Студия</a>
+          <a href="index.html" class="header-nav__link">Студия</a>
         </li>
         <li class="header-nav__item">
-          <a href="portfolio.html" class="link">Портфолио</a>
+          <a href="./portfolio.html" class="header-nav__link">Портфолио</a>
         </li>
         <li class="header-nav__item">
-          <a href="/" class="link">Контакты</a>
+          <a href="/" class="header-nav__link">Контакты</a>
         </li>
       </ul>
       <ul class="header-nav__contacts">
         <li class="navimail">
+          <div class="header-nav__contacts-icon">
+            <svg>
+              <use href="./images/sprite.svg#mail"></use>
+            </svg>
+          </div>
           <a href="mailto:info@devstudio.com" class="contacts__link">
             info@devstudio.com
           </a>
         </li>
         <li class="naviphone">
+          <div class="header-nav__contacts-icon">
+            <svg>
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
+          </div>
           <a href="/" class="contacts__link">+38 096 111 11 11</a>
         </li>
       </ul>
+      <button class="nav-toggler" aria-label="navigation toggler">
+        <svg class="nav-toggler__icon">
+          <use href="./images/burger-nav.svg#icon"></use>
+        </svg>
+      </button>
     </nav>
   </header>
   <main class="galary-main">
     <ul class="galary-nav">
       <li>
-        <button class="galary-button">Все</button></a>
+        <button class="galary-button">Все</button>
       </li>
       <li>
         <button class="galary-button">Веб-сайты</button>
@@ -64,126 +79,178 @@
     </ul>
     <ul class="galary-item">
       <li class="galary-item-list">
-        <img src="./images/galary/img (1).png" alt="" />
+        <div class="galary__img"><img src="./images/galary/img (1).png" alt="butefly" />
+          <div class="galary__overlay">
+            <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+              Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+          </div>
+        </div>
         <div class="galary-box">
-          <h2 class="galary-title">Технокряк</h2>
-          <p class="galary-words">Веб-сайт</p>
+          <h2 class="galary__title">Технокряк</h2>
+          <p class="galary__text">Веб-сайт</p>
         </div>
       </li>
       <li class="galary-item-list">
-        <img src="./images/galary/img (2).jpg" alt="" />
+        <div class="galary__img"><img src="./images/galary/img (2).jpg" alt="" />
+          <div class="galary__overlay">
+            <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+              Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+          </div>
+        </div>
         <div class="galary-box">
-          <h2 class="galary-title">Постер New Orlean vs Golden Star</h2>
-          <p class="galary-words">Дизайн</p>
+          <h2 class="galary__title">Постер New Orlean vs Golden Star</h2>
+          <p class="galary__text">Дизайн</p>
         </div>
       </li>
       <li class="galary-item-list">
-        <img src="./images/galary/img (3).jpg" alt="" />
+        <div class="galary__img"><img src="./images/galary/img (3).jpg" alt="" />
+          <div class="galary__overlay">
+            <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+              Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+          </div>
+        </div>
         <div class="galary-box">
-          <h2 class="galary-title">Ресторан Seafood</h2>
-          <p class="galary-words">Приложение</p>
+          <h2 class="galary__title">Ресторан Seafood</h2>
+          <p class="galary__text">Приложение</p>
         </div>
       </li>
       <li class="galary-item-list">
-        <img src="./images/galary/img (4).jpg" alt="" />
+        <div class="galary__img"><img src="./images/galary/img (4).jpg" alt="" />
+          <div class="galary__overlay">
+            <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+              Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+          </div>
+        </div>
         <div class="galary-box">
-          <h2 class="galary-title">Проект Prime</h2>
-          <p class="galary-words">Маркетинг</p>
+          <h2 class="galary__title">Проект Prime</h2>
+          <p class="galary__text">Маркетинг</p>
         </div>
       </li>
       <li class="galary-item-list">
-        <img src="./images/galary/img (5).jpg" alt="" />
+        <div class="galary__img"><img src="./images/galary/img (5).jpg" alt="" />
+          <div class="galary__overlay">
+            <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+              Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+          </div>
+        </div>
         <div class="galary-box">
-          <h2 class="galary-title">Проект Boxes</h2>
-          <p class="galary-words">Приложение</p>
+          <h2 class="galary__title">Проект Boxes</h2>
+          <p class="galary__text">Приложение</p>
         </div>
       </li>
       <li class="galary-item-list">
-        <img src="./images/galary/img (6).jpg" alt="" />
+        <div class="galary__img"><img src="./images/galary/img (6).jpg" alt="" />
+          <div class="galary__overlay">
+            <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+              Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+          </div>
+        </div>
         <div class="galary-box">
-          <h2 class="galary-title">Inspiration has no Borders</h2>
-          <p class="galary-words">Веб-сайт</p>
+          <h2 class="galary__title">Inspiration has no Borders</h2>
+          <p class="galary__text">Веб-сайт</p>
         </div>
       </li>
       <li class="galary-item-list">
-        <img src="./images/galary/img (7).jpg" alt="" />
+        <div class="galary__img"><img src="./images/galary/img (7).jpg" alt="" />
+          <div class="galary__overlay">
+            <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+              Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+          </div>
+        </div>
         <div class="galary-box">
-          <h2 class="galary-title">Издание Limited Edition</h2>
-          <p class="galary-words">Дизайн</p>
+          <h2 class="galary__title">Издание Limited Edition</h2>
+          <p class="galary__text">Дизайн</p>
         </div>
       </li>
       <li class="galary-item-list">
-        <img src="./images/galary/img (8).jpg" alt="" />
+        <div class="galary__img"><img src="./images/galary/img (8).jpg" alt="" />
+          <div class="galary__overlay">
+            <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+              Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+          </div>
+        </div>
         <div class="galary-box">
-          <h2 class="galary-title">Проект LAB</h2>
-          <p class="galary-words">Маркетинг</p>
+          <h2 class="galary__title">Проект LAB</h2>
+          <p class="galary__text">Маркетинг</p>
         </div>
       </li>
       <li class="galary-item-list">
-        <img src="./images/galary/img (9).jpg" alt="" />
+        <div class="galary-block__overlay">
+
+          <div class="galary__img"><img src="./images/galary/img (9).jpg" alt="" />
+            <div class="galary__overlay">
+              <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                сервисов.
+                Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+            </div>
+          </div>
+        </div>
         <div class="galary-box">
-          <h2 class="galary-title">Growing Business</h2>
-          <p class="galary-words">Приложение</p>
+          <h2 class="galary__title">Growing Business</h2>
+          <p class="galary__text">Приложение</p>
         </div>
       </li>
     </ul>
-    <!-- <div class="container">
-        <ul class="gallery">
-          <li>
-            <img src="./images/galary/img (9).jpg" alt="" class="gallery__img">
-            <div class="gallery-description">
-              <h2 class="gallery-description__title">Growing Business</h2>
-              <p class="gallery-description__caption">Приложение</p>
-            </div>
-          </li>
-          <li>
-            <img src="./images/galary/img (9).jpg" alt="" class="gallery__img">
-            <div class="gallery-description">
-              <h2 class="gallery-description__title">Growing Business</h2>
-              <p class="gallery-description__caption">Приложение</p>
-            </div>
-          </li>
-          <li class="gallery-item">
-            <img src="./images/galary/img (9).jpg" alt="" class="gallery__img">
-            <div class="gallery-description">
-              <h2 class="gallery-description__title">Growing Business</h2>
-              <p class="gallery-description__caption">Приложение</p>
-            </div>
-          </li>
-          <li>
-            <img src="./images/galary/img (9).jpg" alt="" class="gallery__img">
-            <div class="gallery-description">
-              <h2 class="gallery-description__title">Growing Business</h2>
-              <p class="gallery-description__caption">Приложение</p>
-            </div>
-          </li>
-          <li>
-            <img src="./images/galary/img (9).jpg" alt="" class="gallery__img">
-            <div class="gallery-description">
-              <h2 class="gallery-description__title">Growing Business</h2>
-              <p class="gallery-description__caption">Приложение</p>
-            </div>
-          </li>
-          <li>
-            <img src="./images/galary/img (9).jpg" alt="" class="gallery__img">
-            <div class="gallery-description">
-              <h2 class="gallery-description__title">Growing Business</h2>
-              <p class="gallery-description__caption">Приложение</p>
-            </div>
-          </li>
-        </ul>
-      </div> -->
-
   </main>
-
   <footer class="footer">
-    <div class="foot-block">
-      <a href="/" class="logo">Web<span class="logo-span">Studio</span></a>
-      <address class="address">
-        <p class="foot-adress">г. Киев, пр-т Леси Украинки, 26</p>
-        <p class="foot-mail">info@example.com</p>
-        <p class="foot-number">11 11 11</p>
-      </address>
+    <div class="foot-box">
+      <div class="block-table">
+        <div class="foot-block">
+          <a href="/" class="foot__logo">Web<span class="foot-logo__span">Studio</span></a>
+          <address class="address">
+            <p class="foot-adress">г. Киев, пр-т Леси Украинки, 26</p>
+            <p class="foot-mail">info@example.com</p>
+            <p class="foot-number">+38 099 111 11 11</p>
+          </address>
+        </div>
+        <div class="foot-social">
+          <h2 class="social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+          <ul class="foot-icon">
+            <li class="foot-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="foot-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="foot-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="foot-icon__item">
+              <a href="#">
+                <svg>
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="subscription">
+        <h2 class="subscription__title">подпишитесь на рассылку</h2>
+        <form action="" class="subscription__form">
+          <input type="text" placeholder="E-mail" type="email" id="email" name="email" class="form__field">
+          <button type="button" class="form__button">
+            <span class="form__text">Подписаться</span>
+            <div class="form__svg">
+              <svg>
+                <use href="./images/svg/email.svg#email"></use>
+              </svg>
+            </div>
+          </button>
+        </form>
+      </div>
     </div>
   </footer>
 </body>

@@ -242,7 +242,6 @@ a,
 .titlelist {
   color: var(--withe-color);
   min-height: 600px;
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -274,6 +273,7 @@ a,
 .titlelist__button {
   background-color: var(--blue-color);
   color: var(--withe-color);
+  cursor: pointer;
 }
 
 .titlelist__button:hover,
@@ -307,6 +307,40 @@ h2,
 .card__title {
   font-weight: 700;
 }
+@media screen and (max-width: 767px) {
+  .titlelist {
+    background-image: url(../images/HeaderPhone.png);
+  }
+}
+@media screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .titlelist {
+    background-image: url(../images/Header\ img2x.jpg);
+  }
+}
+@media screen and (max-width: 767px) and (min-resolution: 3dppx) {
+  .titlelist {
+    background-image: url(../images/Header\ img3x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .titlelist {
+    background-image: url(../images/Header\ img.png);
+  }
+  .titlelist__title {
+    max-width: 360px;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 2dppx) {
+  .titlelist {
+    background-image: url(../images/Header\ img2xTABL.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 3dppx) {
+  .titlelist {
+    background-image: url(../images/Header\ img3xTABL.jpg);
+  }
+}
 @media screen and (min-width: 1600px) {
   .titlelist {
     background-image: url(../images/banner.png);
@@ -320,19 +354,14 @@ h2,
     letter-spacing: 1.36px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 1600px) and (min-resolution: 2dppx) {
   .titlelist {
-    background-image: url(../images/Header\ img.png);
-  }
-  .titlelist__title {
-    max-width: 360px;
-    font-size: 26px;
+    background-image: url(../images/Img2x.jpg);
   }
 }
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1600px) and (min-resolution: 3dppx) {
   .titlelist {
-    background-image: url(../images/HeaderPhone.png);
+    background-image: url(../images/Img3x.jpg);
   }
 }
 /*Особенности */
@@ -385,17 +414,6 @@ h2,
 }
 .card__text {
   line-height: 1.71;
-}
-
-.plate,
-.time,
-.notebook,
-.austronavt {
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
 }
 .feature-card__icon {
   position: relative;
@@ -504,19 +522,10 @@ h2,
   color: var(--withe-color);
   margin: 0;
 }
-.work-icon {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  position: absolute;
-  transform: translatex(-100%);
-  transition: transform 400ms 300ms;
-}
 .work-img__item:hover .work-icon {
   transform: translateX(50%);
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599px) {
   .work {
     display: none;
   }
@@ -1073,9 +1082,3 @@ h2,
     margin-bottom: 50px;
   }
 }
-/* .galary-item-list {
-  width: 370px;
-} */
-/* .galary-item-list:nth-child(3n) {
-  margin-right: -7px;
-} */

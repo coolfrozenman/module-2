@@ -69,3 +69,15 @@ body {
     transform: rotatez(360deg);
   }
 }
+.bg-box {
+  width: 640px;
+  height: 427px;
+  background-image: url(../images/practic/corgi-g8d35a4243_640.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (min-resolution: 2dppx) {
+  .bg-box {
+    background-image: url(../images/practic/corgi-g561cd0b8b_1280.jpg);
+  }
+}
